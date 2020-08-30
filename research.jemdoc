@@ -1,0 +1,329 @@
+# jemdoc: menu{MENU}{research.html}, nofooter
+~~~
+{}{raw}
+    <script type="text/javascript">
+    <!--
+        function expand_collapse(id) {
+           var e = document.getElementById(id);
+           var f = document.getElementById(id+"_arrows");
+           if(e.style.display == 'none'){
+              e.style.display = 'block';
+              f.innerHTML = '&#9650';
+           }
+           else {
+              e.style.display = 'none';
+              f.innerHTML = '&#9660';
+           }
+        }
+    //-->
+    </script>
+	<style type="text/css">
+	.arrows{text-decoration:none;color:silver;}
+	</style>
+~~~
+
+~~~
+{}{raw}
+<div id="toptitle">
+<h1>Research Interests and Projects</h1>
+</div>
+~~~
+
+== Oscillator-based von Neumann and non-von Neumann Computing
+~~~
+{}{img_left}{https://web.stanford.edu/~peastman/statmech/_images/ising_model.svg}{Ising}{240}
+We aim to use *oscillators* to implement *Ising machines* as well
+*general-purpose Boolean computation* systems.
+# that are extremely *energy efficient* while at the same time more *immune to noise and interference* than conventional computers.
+
+In such systems, logic is encoded using the phase of oscillatory signals,
+rather than voltage levels.  Such phase encoding has long been used in radio
+communication for its *superior noise immunity*; we show that it can also be used
+for computation, using self-sustaining nonlinear oscillators as underlying
+logic elements.
+
+$\longleftarrow$ Illustration of the Ising model.
+~~~
+
+~~~
+{}{img_left}{figures/metronome-locked.gif}{metronome-locked}{240}
+The oscillators can be *from any physical domain*, including electrical (eg,
+using CMOS), biological (neurons, intracellular oscillators), nanotechnological
+(spin torque nano-oscillators, MEMS resonators), optical (lasers), /etc./.
+Depending on the oscillator technology used, there is great potential for
+*high-speed* and *low-power* operation.
+
+$\longleftarrow$ Phase lock under injection locking in mechanical
+metronomes --- a key mechanism underlying our computation systems.
+
+We have developed the core theory and design tools for such systems; we have
+also realized proof-of-concept prototypes using CMOS technology, including both
+*Finite State Machines* (FSMs) for von Neumann architectures, and *Ising
+machines* for solving combinatorial optimization problems.
+We believe that oscillator-based Boolean computation systems, implemented with
+CMOS or other nanoscale devices from *spintronics*, *MEMS*, or *silicon
+photonics*, will emerge as a key next-generation technology for computing.
+~~~
+
+~~~
+{}{raw}
+<p><a href="#PHLOGON" id="1_arrows" class="arrows" onclick="expand_collapse('1');">&#9660</a><span style="font-size:115%;"> Click on the arrow to learn more </span>
+<div id="1" style="display:none;">
+~~~
+
+=== Encoding Bits Using Phase 
+~~~
+{}{img_left}{figures/phase_logic.png}{phase_logic}{300}
+$\longleftarrow$ Logic values, 0 or 1, can be encoded in the relative phase
+differences from a reference signal.
+
+Phase-based encoding features inherently superior noise immunity over
+level-based encoding.  A quick analogy is the use of phase and frequency
+modulation over amplitude modulation in radio communication for better
+resistance to noise and interferences.
+This advantage of phase encoding, although having been known in communication
+for a long time, is yet to be fully exploited in computation.
+~~~
+
+=== Sub-harmonic Injection Locking (SHIL) and Oscillator Latch 
+~~~
+{}{img_left}{figures/SHIL.png}{mechanism_IL_phase_lock}{350}
+
+Under Injection Locking (IL), an oscillator\'s response locks on to an
+oscillating perturbation in both frequency and phase; IL is a general and
+intriguing phenomenon observed in all nonlinear oscillators, and is widely used
+in engineering.
+
+$\longleftarrow$ Phase-locked states under IL and SHIL.
+~~~
+
+~~~
+{}{img_left}{figures/SHIL-bistable-phase-locks-adjusted.gif}{SHIL-bistable-phase}{300}
+When the perturbation oscillates at integer multiples of the oscillator\'s
+natural frequency, through the mechanism of Sub-harmonic Injection
+Locking (SHIL), the oscillator\'s phase can lock to the input with multistable
+sub-harmonic phase-locked responses, which can then be used to encode and store
+logic bits, making the oscillator behave as a logic latch.
+For example, a binary latch can be implemented by perturbing an oscillator with
+a small periodic signal at about twice its natural frequency.
+The oscillator will develop bistable responses with a phase difference of
+$180^\circ$, representing 0 and 1 in phase encoding.
+
+$\longleftarrow$ Bistable phase locks observed in a three-stage CMOS ring
+oscillator.
+~~~
+
+=== Theory and Design Tools 
+
+A long standing obstacle in the study of oscillator-based systems is the
+difficulty in analyzing and understanding injection locking.
+Our work on RF circuit simulation over the years has shed light on this topic,
+leading to the development of theory and design tools suitable for the
+practical design of oscillator-based computation systems.
+
+~~~
+{}{img_left}{figures/mechanism_GenAdler_solutions.png}{GenAdler_solutions}{500}
+
+The dynamics of an oscillator's phase can be captured accurately and
+efficiently using the phase macromodel of the oscillator.
+Based on it, we have developed the Generalized Adler's Equation (GAE), that can
+accurately predict the locking range of both IL and SHIL.
+
+$\longleftarrow$ The LHS and RHS of the steady-state GAE of an oscillator under
+SHIL. Intersections of the horizontal line and periodic waveforms represent
+potential phase locks. This figure demonstrates the mechanism of a phase-based
+D latch.
+~~~
+
+~~~
+{}{img_left}{figures/waveforms.jpg}{waveforms}{500}
+Phase macromodels are also important in predicting the speed at which
+an oscillator's phase switches between logic 0 and 1.
+They are very useful in exploring the trade-offs between noise, energy and
+speed of oscillator-based Boolean computation systems.
+
+$\longleftarrow$ Results from SPICE-level transient simulation and the design
+tools running phase-based simulation.
+~~~
+
+=== Oscillator-based Finite State Machines and Ising Machines
+
+~~~
+{}{img_left}{figures/LC-FSM.png}{LC-FSM}{300}
+
+Other than oscillator latches, we also need logic gates for general-purpose
+computation.
+MAJORITY and NOT gates constitute a logically complete set.
+Both can be conveniently implemented with phase logic:
+NOT by inversion or delay by $180^\circ$;
+MAJORITY by adding input signals such that the phase of the output will pick
+the majority of the input phases.
+Putting all these components together, we can then implement Finite State
+Machines (FSMs) that operate completely using phase encoding.
+
+$\longleftarrow$ A 1-bit FSM (a serial adder) built with CMOS ring oscillators
+on breadboards.
+~~~
+
+~~~
+{}{img_left}{figures/MAXCUT_G22.png}{MAXCUT_G22}{300}
+While classical computational models such as FSMs are powerful and ubiquitous,
+they are not very suitable for many computational tasks, /e.g./, Boolean
+satisfiability (SAT) problems, many graph-related optimization problems, prime
+factorization, /etc./.
+Many of these problems can be mapped to finding the ground states of the
+corresponding Ising Hamiltonians, and can be solved more efficiently using
+Ising machines.
+Our work shows that oscillators are a natural choice for implementing Ising
+machines.
+The bistability in oscillator latches can be modulated with the strength of
+SHIL --- from phase-noise-induced random number generation without SHIL, to
+latching a definitive binary value with strong SHIL.
+Anywhere in between, the oscillator encodes 0 or 1 with a probability
+determined by its coupling with other oscillators.
+Such controllable random number generation \"agents\", when coupled properly,
+can encode the ground states of an Ising Hamiltonian, making the coupled
+oscillator network a practical Ising machine.
+
+$\longleftarrow$ Phases of 2000 coupled oscillators settling to a local minimum
+of a benchmark MAX-CUT problem [http://www.optsicom.es/maxcut/ G22].
+~~~
+
+~~~
+{}{img_left}{figures/LC-Ising.png}{LC-Ising}{300}
+$\longleftarrow$ Breadboard implementation of a simple Ising machine with 4
+CMOS cross-coupled LC oscillators and a full resistive connection; experiments
+show that it solves the size-4 MAX-CUT problem. Note that for almost any
+combinatorial optimization problem, full connectivity is not necessary. Sparse
+coupling can be achieved by using auxiliary nodes in the Ising lattice.
+~~~
+
+~~~
+{}{img_left}{figures/OIM240_small.jpeg}{OIM240}{300}
+$\longleftarrow$ PCB implementation of size-240 Ising machine, with programmable couplings.
+~~~
+
+~~~
+{}{raw}
+</div>
+~~~
+
+== Device Compact Modelling
+
+~~~
+{}{img_left}{figures/structure.jpg}{structure}{240}
+A long-standing barrier to research in models and algorithms for
+continuous-time simulation has been the lack of a powerful yet convenient
+platform for prototyping new ideas.
+To address this issue, we have developed the Model and Algorithm Prototyping
+Platform (MAPP).
+MAPP's modular structuring makes it possible to add a new device with only
+minimal knowledge of simulation algorithms; similarly, new simulation
+algorithms can be added easily, with little knowledge of the details of the
+devices in MAPP.
+MAPP has been released as open source on [https://github.com/jaijeet/MAPP/wiki
+GitHub] under the GNU Public License.
+~~~
+
+~~~
+{}{raw}
+    <table class="imgtable"><tr><td>
+    <img src="figures/MOS.jpg" alt="MOS" width="240px" />&nbsp;</td>
+    <td align="left">
+~~~
+	We have been able to prototype, test and debug many device compact models
+	with the help of MAPP, including various models for MOSFETs (BSIM, PSP, MVS,
+	MIT\/Purdue Fe-FET models, resonate body transistor, /etc./), optical devices
+	(MIT ring resonator, Purdue micro-ring frequency comb, Berkeley VCSEL, /etc./),
+	spintronic devices (MTJ, piezomagnetic spin torque oscillator, /etc./), and
+	other devices (RRAM\/memrisors, ESD clamps, magnetic cores, /etc./).
+	Device models in MAPP are specified in an executable format --- ModSpec, which
+	is designed to work with devices and systems from multiple physical
+    domains, and is not limited to electrical circuits.
+~~~
+{}{raw}
+    </td>
+    <td><img src="figures/ModSpec.png" alt="ModSpec" width="240px" />&nbsp;</td>
+    </tr></table>
+~~~
+
+~~~
+{}{img_left}{figures/hys.png}{hys}{240}
+Existing models for memristors all suffer from problems associated with
+mathematical ill-posedness, thus do not work well in simulation, /e.g./, 
+[https://knowm.org/well-posed-memristor-modeling-with-xyce-and-verilog-a/ none
+generates usable DC operating points for circuit design].
+We have been able to identify the problem, show the proper way of modelling
+hysteresis using internal state variables, and provide proper implementations
+of the models in both ModSpec and Verilog-A (an industry-standard compact
+modelling language).
+The result is [https://github.com/jaijeet/BMM BMM] --- a collection of
+well-posed memristor models.
+Furthermore, the general formalism for modelling hysteresis can be applied to
+ESD protection devices as well.
+[https://github.com/jaijeet/BESD BESD] is a collection of models that use only
+smooth and continuous functions to capture the ESD snapback phenomenon, which
+previously required the use of if-else statements and often caused convergence
+problems.
+~~~
+
+~~~
+{}{img_left}{figures/ANN.png}{ANN}{240}
+Handcrafting device compact models takes manpower and requires expertise in
+device physics, numerical analysis, and the code structure of specific
+simulators.
+Therefore, it is often not a feasible option if one wants to deploy new devices
+quickly.
+We have been able to develop several types of automatic compact model
+generation techniques, utilizing spline interpolations, Chebyshev expansions,
+and artificial neural networks (ANNs).
+Not only can we automate the modelling process, the resulting table-based and
+ANN-based models can also offer significant speedup and markedly improved
+numerical properties such as smoothness and differentiability over the
+corresponding handcrafted compact models.
+~~~
+
+== Advanced Simulation Algorithms
+
+~~~
+{}{img_left}{figures/Goto-pair-hom.png}{Goto-pair-hom}{240}
+We have been able to prototype many simulation algorithms with the help of
+MAPP, including common analyses like DC, AC, transient (time integration), DC
+sensitivity, /etc./, and more advanced ones like homotopy (arc-length
+continuation method), shooting, Harmonic Balance (including multi-tone),
+transient sensitivity, phase-macromodel-based analyses, Stochastic Steady State
+and Stochastic AC analyses, polynomial-chaos-based uncertainty quantification,
+/etc./.
+We have also designed SPICE-compatible initialization and limiting schemes as
+convergence aids that can fit in the differential equation formulation.
+~~~
+
+~~~
+{}{img_left}{figures/storagePhase.png}{Phase_variation}{240}
+Among them, several analyses are essential for our research in oscillator-based
+computation.
+Periodic Steady State (PSS) techniques such as shooting and Harmonic Balance
+are the foundation of oscillator analysis; PPV-based phase macromodels and
+GenAdler-based analyses are crucial for analyzing injection locking properties
+and for speeding up oscillator simulation.
+~~~
+
+== ~
+~~~
+{}{raw}
+<br> <br>
+~~~
+
+At the end, here is a graph showing the slowdown of Moore's Law, as well as
+several technology trends for computing with their \"hotness\" over time,
+measured by [https://en.wikipedia.org/wiki/N-gram N-gram] data from
+[https://books.google.com/ngrams Google Books].
+I believe that the exploration of any of them, be it graphene or CNT,
+spintronics or silicon photonics, cannot thrive without an integration of
+knowledge from devices modelling, simulation algorithms and system-level
+design.
+And it is in these areas where I plan to continue my research.
+~~~
+{}{img_left}{figures/moore-and-alternatives-v1.png}{Moore-and-alternatives}{997}
+~~~
+

@@ -1,0 +1,36 @@
+# jemdoc: menu{MENU}{teaching.html}, nofooter
+= Teaching
+
+== EE128\/ME134, Feedback Control Systems, Spring 2017 \[[https://inst.eecs.berkeley.edu/~ee128/sp17 link]\]
+This is an undergraduate class on control theory and engineering, attended
+mainly by EECS and ME students in their senior year.
+Other than duties related to discussions, office hours, homeworks and exams, my
+main job was to teach the lab sections.
+Check out below some of the cool projects my students were able to complete
+through the course of the class.
+~~~
+{}{raw}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dCi08rqlwCo" frameborder="0" allowfullscreen></iframe>
+~~~
+The lead-lag control for the magnetic levitation is done entirely using analog
+circuits, made with op-amps and passive devices on a breadboard.
+An LED and a photoresistor are used to sense the height of the object; a
+current amplifier is used to control the magnetic core.
+
+Another interesting project is the inverted pendulum. Here is a video showing a
+self-erecting inverted pendulum.
+~~~
+{}{raw}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uhsOtl2rebw" frameborder="0" allowfullscreen></iframe>
+~~~
+
+== EE219A, Numerical Simulation and Modelling, Fall 2015 \[[http://potol.eecs.berkeley.edu/classWiki/tiki-index.php?page=EECS219A-Fall-2015 link]\]
+This course provides a detailed introduction to numerical simulation and
+modelling mainly to first-year graduate students and senior undergrads.
+
+I gave several full length lectures for this course, including one on the
+modelling of common nonlinear electronic devices, one on the Newton-Raphson
+algorithm, and one on the APIs of Differential Algebraic Equation objects.
+
+The course emphasizes hands-on programming and application to several domains,
+including circuits, nanotechnology, and biology. 

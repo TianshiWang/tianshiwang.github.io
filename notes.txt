@@ -1,0 +1,68 @@
+----------------------------------------------------------------------------
+100 words for MAPP
+
+A long-standing barrier to research in models and algorithms for
+continuous-time simulation has been the lack of a powerful yet convenient
+platform for prototyping new ideas.
+To address this issue, we have developed the Model and Algorithm Protyping
+Platform (MAPP).
+MAPP's modular structuring makes it possible to add a new device with only
+minimal knowledge of simulation algorithms; similarly, new simulation
+algorithms can be added easily, with little knowledge of the details of the
+devices in MAPP.
+MAPP has been released as open source on gitHUB under the GNU Public License.
+
+----------------------------------------------------------------------------
+80 words for models, MVS, optical
+
+We have been able to prototype, test and debug many device compact models
+with the help of MAPP, including various models for MOSFETs (BSIM, PSP, MVS,
+MIT/Purdue Fe-FET models, resonate body transistor, /etc./), optical devices
+(MIT ring resonator, Purdue micro-ring frequency comb, Berkeley VCSEL, /etc./),
+spintronic devices (MTJ, piezomagnetic spin torque oscillator, /etc./), and
+other devices (RRAM/memrisors, ESD clamps, magnetic cores, /etc./).
+Device models in MAPP are specified in an executable format --- ModSpec, which
+is designed to work with devices and systems from multiple
+physical domains, i.e., MAPP/ModSpec is not limited to, e.g., just electrical
+circuits.
+
+----------------------------------------------------------------------------
+100 words for memristor, ESD
+
+Existing models for memristors all suffer from problems associated with
+mathematical ill-posedness, thus do not work well in simulation, /e.g./, 
+[https://knowm.org/well-posed-memristor-modeling-with-xyce-and-verilog-a/ none
+generates usable DC operating points for circuit design].
+We have been able to identify the problem, show the proper way of modelling
+hysteresis using internal state variables, and provide proper implementations
+of the models in both ModSpec and Verilog-A (an industry-standard compact
+modelling language).
+The result is [https://github.com/jaijeet/BMM BMM] --- a collection of
+well-posed memristor models.
+Furthermore, the general formalism for modelling hysteresis can be applied to
+ESD protection devices as well.
+[https://github.com/jaijeet/BESD BESD] is a collection of models that use only
+smooth and continuous functions to capture the ESD snapback phenomenon, which
+previously required the use of if-else statements and often caused convergence
+problems.
+
+----------------------------------------------------------------------------
+100 words for analyses, homotopy, multi-tone, phase-macromodel, SSS/SAC?
+a figure
+
+phase-based modelling techniques for analyzing properties of injection locking,
+speeding up oscillator simulation and characterizing oscillator's quality
+factor.
+
+During his internship at Sandia National Labs in 2013, he studied all the
+existing methods for multi-tone harmonic balance, formulated a unifying
+algorithm and implemented it in Sandia's internal simulator.
+The code structure and input syntax for multi-tone HB he designed during the
+internship have been adopted Sandia's open-source simulator Xyce since release
+6.2.
+During his internship at Cadence Design Systems in 2016, he conducted in-depth
+research into a new type of circuit simulation algorithms named Stochastic
+Steady State and Stochastic AC analyses, which offer potentials in several
+magnitudes of speedup for noise simulation of sigma-delta ADCs and digital
+PLLs. As a result, Cadence is devoting more manpower to further develop these
+analyses.

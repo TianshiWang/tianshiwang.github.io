@@ -1,0 +1,79 @@
+# jemdoc: menu{MENU}{publications.html}, nofooter
+= Publications 
+
+- [https://arxiv.org/pdf/1709.08102.pdf Oscillator-based Ising Machine]\n
+  *Tianshi Wang* and Jaijeet Roychowdhury\n
+  arXiv preprint arXiv:1709.08102, 2017.
+
+- [publications/snapback2016CICC--2017-07.pdf Modelling Multistability and Hysteresis in ESD Clamps, Memristors and Other Devices]\n
+  *Tianshi Wang*\n
+  *(invited paper)* in Proceedings of IEEE Custom Integrated Circuits Conference, May 2017.
+
+- [https://arxiv.org/pdf/1710.02015.pdf Rigorous Q Factor Formulation and Characterization for Nonlinear Oscillators]\n
+  *Tianshi Wang* and Jaijeet Roychowdhury\n
+  arXiv preprint arXiv:1710.02015, 2017.
+
+- [https://arxiv.org/pdf/1710.01056.pdf Achieving Phase-based Logic Bit Storage in Mechanical Metronomes]\n
+  *Tianshi Wang*\n
+  arXiv preprint arXiv:1710.01056, 2017.
+
+- [https://arxiv.org/pdf/1710.02000.pdf Analyzing Oscillators using Describing Functions]\n
+  *Tianshi Wang*\n
+  arXiv preprint arXiv:1710.02000, 2017.
+
+- [https://arxiv.org/pdf/1709.03886.pdf Sub-harmonic Injection Locking in Metronomes]\n
+  *Tianshi Wang*\n
+  arXiv preprint arXiv:1709.03886, 2017.
+
+- [publications/STEAM2017ASPDAC.pdf STEAM: Spline-based Tables for Efficient and Accurate Device Modelling]\n
+  Archit Gupta, *Tianshi Wang*, A. Gokcen Mahmutoglu, and Jaijeet Roychowdhury\n
+  in Proceedings of IEEE Asia and South Pacific Design Automation Conference (ASP-DAC), Jan 2017.
+
+- [https://nanohub.org/resources/26199 Well-Posed Device Models for Electrical Circuit Simulation]\n
+  A. Gokcen Mahmutoglu, *Tianshi Wang*, Archit Gupta, and Jaijeet Roychowdhury\n
+  NEEDS: Nano-Engineered Electronic Device Simulation Node Tech. Rep., Mar 2017.
+
+- [https://www2.eecs.berkeley.edu/Pubs/TechRpts/2017/EECS-2017-160.pdf Modelling Optical Devices and Systems in MAPP]\n
+  *Tianshi Wang* and Jaijeet Roychowdhury\n
+  EECS Department, University of California, Berkeley, Tech. Rep., UCB/EECS-2017-160, Oct 2017.
+
+- [https://arxiv.org/pdf/1605.04897.pdf Well-Posed Models of Memristive Devices]\n
+  *Tianshi Wang* and Jaijeet Roychowdhury\n
+  arXiv preprint arXiv:1605.04897, 2016.
+
+- [publications/MAPP2015CICC-2015-05.pdf MAPP: The Berkeley Model and Algorithm Prototyping Platform]\n
+  *Tianshi Wang*, Aadithya V. Karthik, Bichen Wu, Jian Yao, and Jaijeet Roychowdhury\n
+  *(invited paper)* in Proceedings of IEEE Custom Integrated Circuits Conference, Sept 2015.
+
+- [publications/2015-04-02--0900--182-JM38-Tianshi.pdf Design Tools for Oscillator-based Computing Systems]\n
+  *Tianshi Wang* and Jaijeet Roychowdhury\n
+  in Proceedings of Design Automation Conference (DAC), June 2015.
+
+- [publications/NEMO2016-tianshi-WE1-2.pdf Multiphysics Modelling and Simulation in Berkeley MAPP]\n
+  *Tianshi Wang* and Jaijeet Roychowdhury\n
+  in Proceedings of IEEE International Conference on Numerical Electromagnetic and Multiphysics Modeling and Optimization (NEMO), July 2016.
+
+- [http://ieeexplore.ieee.org/document/6932458/ Domain-Alternated Optimization for Passive Macro-modeling]\n
+  Zuochang Ye, *Tianshi Wang*, and Yang Li\n
+  in IEEE Trans. on VLSI Systems, 23(10), 2244-2255, 2015.
+
+- [publications/2015-07-02--submission-PHLOGON2015FAC.pdf Does It Take Longer to Injection Lock a High-Q Oscillator?]\n
+  *Tianshi Wang* and Jaijeet Roychowdhury\n
+  Frontiers in Analog CAD (FAC), Nov 2015.
+
+- [http://ieeexplore.ieee.org/document/7415070/ MAPP: A Platform for Prototyping Algorithms and Models Quickly and Easily]\n
+  *Tianshi Wang*, Aadithya V. Karthik, Bichen Wu, and Jaijeet Roychowdhury\n
+  *(invited paper)* in Proceedings of IEEE International Conference on Numerical Electromagnetic and Multiphysics Modeling and Optimization (NEMO), Aug 2015.
+
+- [publications/PHLOGON_UCNC_2014.pdf PHLOGON: PHase-based LOGic using Oscillatory Nano-systems]\n
+  *Tianshi Wang* and Jaijeet Roychowdhury\n
+  book chapter in Unconventional Computation and Natural Computation (eds: Ibarra\/Karri\/Kopecki), Springer, July 2014.
+
+- [http://ieeexplore.ieee.org/document/7049917/ An Efficient Time Step Control Method in Transient Simulation for DAE System]\n
+  Jian Yao, *Tianshi Wang*, and Jaijeet Roychowdhury\n
+  in Proceedings of the 21st IEEE International Conference on Electronics, Circuits and Systems (ICECS), Dec 2014.
+
+- [http://ieeexplore.ieee.org/document/6224200/ Robust Passive Macro-Model Generation with Local Compensation]\n
+  *Tianshi Wang* and Zuochang Ye\n
+  in IEEE Trans. on Microwave Theory and Techniques, 60(8), 2313-2328, 2012.
+

@@ -1,0 +1,32 @@
+# jemdoc: menu{MENU}{index.html}, nofooter
+== Tianshi Wang
+
+~~~
+{}{img_left}{figures/TW.jpeg}{Tianshi Wang}{150}{200}{http://people.eecs.berkeley.edu/~tianshi/}
+I am a PhD student in the Department of [http://eecs.berkeley.edu Electrical
+Engineering and Computer Sciences] at [http://berkeley.edu UC Berkeley],
+advised by [https://www2.eecs.berkeley.edu/Faculty/Homepages/jr.html Prof.
+Jaijeet Roychowdhury].
+
+My thesis work focuses on oscillator-based computation, in which I have shown
+that nonlinear oscillators can implement both general-purpose Boolean
+computation systems and Ising-model-inspired combinatorial optimization
+solvers.
+More generally, I am interested in the theory, characterization and compact
+modelling of novel electronic and multi-domain devices, and their applications
+in novel computational architectures and paradigms.
+Throughout my PhD study, I have also been actively developing open-source
+infrastructures for prototyping new device compact models and advanced
+simulation algorithms to promote reproducible research in the field.
+Before coming to UC Berkeley, I got my Bachelor's degree from the Department of
+Automation at Tsinghua University in 2012.
+~~~
+
+Email: tianshi at berkeley dot edu (GPG/PGP key ID: 2A380392)
+
+# === Research
+# My research interests include 
+# - aaa
+# - bbb
+# 
+[research.html Find out more] about my research interests.

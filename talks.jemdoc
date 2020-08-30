@@ -1,0 +1,124 @@
+# jemdoc: menu{MENU}{talks.html}, nofooter
+= Selected Talks
+
+- */\"MAPP: The Berkeley Model and Algorithm Prototyping Platform\"/*\n
+  \[[talks/2017-07--Livermore-workshop-MAPP-v0.pdf slides pdf]\]\n
+  Berkeley-Livermore Workshop, Berkeley, CA, Jul 2017.
+
+- */\"Modelling Devices with Multistability and Hysteresis\"/*\n
+  \[[talks/2017-04--CICC-hys-v1.pdf slides pdf]\]\n
+  Custom Integrated Circuits Conference (CICC), Austin, TX, May 2017.
+
+- */\"NEEDS Simulation-ready Compact Models\"/*\n
+  \[[https://nanohub.org/groups/needs/ar2017 link]|[talks/2017-Purdue-review-tianshi-v1.pdf slides pdf]\]\n
+  NEEDS Annual Meeting, Purdue University, West Lafayette, IN, May 2017.
+
+- */\"Well-posed Models for ESD Protection Devices, Part I, II and III\"/*\n
+  NXP Semiconductors, Tempe, AZ, Feb 20, 21 & 24, 2017,\n
+  streamed online at NXP locations in Austin TX, Beijing China, Eindhoven Netherlands, Toulouse France.
+
+- */\"Berkeley MAPP: Verilog-A support, multiphysics, table-based models, and other updates\"/*\n
+  \[[http://www.mos-ak.org/berkeley_2016 link]|[talks/2016-12-07--MOS-AK-MAPP-v0.pdf slides pdf]\]\n
+  MOS-AK workshop, Berkeley, CA, Dec 2016.
+
+- */\"Boolean Computation with Oscillators\"/*\n
+  Tsinghua University, Beijing, China, Dec 2016.
+
+- */\"Computing with Phase Logic\"/*\n
+  \[[talks/2016-11-15--overview.pdf slides pdf]\]\n
+  Purdue University, West Lafayette, IN, Nov 15, 2016.
+
+- */\"Well-posed Models for Memristive Devices\"/*\n
+  \[[talks/2016-10-24--Sandia-memristor-v0.pdf slides pdf]\]\n
+  Sandia National Labs, Albuquerque, NM, Oct 2016.
+
+- */\"EDA Challenges in Oscillator-based Boolean Computation\"/*\n
+  \[[talks/2016-10-24--Sandia-PHLOGON-v0.pdf slides pdf]\]\n
+  Sandia National Labs, Albuquerque, NM, Oct 2016.
+
+- */\"Research Overview: MAPP, PHLOGON and ABCD\"/*\n
+  Hisilicon/Huawei, Shenzhen, China, Aug 31, 2016.
+
+- */\"Multiphysics Modelling and Simulation in Berkeley MAPP\"/*\n
+  NEMO Conference, Beijing, China, Jul 2016.
+
+- */\"Simulation-ready Compact Modelling of Memristive Devices\"/*
+  \[[https://nanohub.org/resources/24221 link]|[talks/2016-05-18--Stanford-NEEDSreview-memristor-v2.pdf slides pdf]\]\n
+  NEEDS Annual Meeting,
+  Stanford University, CA, May 2016.
+
+- */\"All-day Hands-on MAPP tutorial\"/*\n
+  \[[https://nanohub.org/groups/needs/2016_workshop link]|[|talks/TODO slides pdf]\]\n
+  NEEDS workshop, Berkeley, Feb 2016.
+
+- */\"Modelling and Simulation of Multiphysics Devices and Systems in MAPP\"/*\n
+  \[[talks/TODO slides pdf]\]\n
+  NEEDS workshop, Berkeley, Feb 2016.
+
+- */\"The Berkeley Model and Algorithm Prototyping Platform\"/*\n
+  \[[https://nanohub.org/resources/23370 link]|[talks/2015-11-05--VMC-MAPP-tianshi-v0.pdf slides pdf]\]\n
+  IEEE/ACM Workshop on Variability Modelling and Characterization (VMC),
+  Austin, TX, Nov 2015.
+
+- */\"Does It Take Longer to Injection Lock a High-Q Oscillator?\"/*\n
+  \[[talks/2015-11-05--FAC-OSX-v0.pdf slides pdf]\]\n
+  Frontiers in Analog CAD (FAC), Austin, TX, Nov 2015.
+
+- */\"MAPP: A Platform for Prototyping Algorithms and Models Quickly and Easily\"/*\n
+  \[[talks/2015-08-12--NEMO-v1.pdf slides pdf]\]\n
+  NEMO Conference, Ottawa, Canada, Aug 2015.
+
+- */\"Design Tools for Oscillator-based Computing Systems\"/*\n
+  \[[talks/2015-06-11--PHLOGON-DAC-v1-print.pdf slides pdf]\]\n
+  Desgin Automation Conference, San Francisco, CA, Jun 2015.
+
+- */\"Developing Your First Model with MAPP\"/*
+  \[[https://nanohub.org/groups/needs/mapp2 link]\]\n
+  hands-on NEEDS workshop
+  MIT, Cambridge, MA, May 2015.
+
+- */\"Boolean Computing using Oscillators\"/*\n
+  \[[https://nanohub.org/groups/needs/annualmt link]|[talks/2015-05-11--PHLOGON-talk-for-NEEDS-v2.pdf slides pdf]\]\n
+  NEEDS Annual Meeting, MIT, Cambridge, MA, May 2015.
+
+- */\"NEEDS (Nano-Engineering Electronic Device Simulation Node)\"/*\n
+  GRC Technology Transfer e-Workshop, Apr 2015.
+
+- */\"PHLOGON: Computing with Phase Logic\"/*\n
+  \[[http://www.eecs.berkeley.edu/bears/2015 link]|[https://www.youtube.com/watch?v=wqLTq5CLRWY YouTube link]\]\n
+  Berkeley EECS Annual Research Symposium (BEARS), Berkeley, CA, Feb 2015.
+
+- */\"Boolean Computation using Oscillators: A 5min Introduction\"/*\n
+  \[[talks/Tianshi-2015BEARS-PHLOGON.pptx slides]\]\n
+  EECS TGIF 5min lightning talk, Berkeley, CA, Feb 2015.
+
+- */\" The Berkeley Model and Algorithm Prototyping Platform\"/*\n
+  \[[http://www.mos-ak.org/berkeley_2014 link]|[talks/07_Tianshi_Wang_MOS-AK_Berkeley_2014.pdf slides pdf]\]\n
+  7th International MOS-AK Workshop, Berkeley, CA, Dec 2014.
+
+- */\"ModSpec\/MDE Tutorial\"/*\n
+  \[[https://nanohub.org/resources/20728 video link]|[talks/TODO slides pdf]\]\n
+  NSF/SRC NEEDS Workshop on Compact Modelling, Berkeley, CA, Feb 20, 2014.
+
+- */\"Xyce ModSpec Interface Hands-on Demo\"/*\n
+  NSF/SRC NEEDS Workshop on Compact Modelling, Berkeley, CA, Feb 21, 2014.
+
+- */\"ModSpec and the MVS model\"/*\n
+  \[[https://nanohub.org/resources/20731 video link]|[talks/2014-02-21--MVS-ModSpec.pdf scribble pdf]\]\n
+  NSF/SRC NEEDS Workshop on Compact Modelling, Berkeley, CA, Feb 21, 2014.
+
+- */\"ModSpec and Xyce-ModSpec-Interface\"/*\n
+  Sandia National Labs, Albuquerque, NM, Nov 2013.
+
+- */\" The Berkeley Model Development Environment: A MATLAB-based Platform for Modelling and Analyzing Nanoscale Devices and Circuits\"/*\n
+  \[[https://nanohub.org/resources/20137 video link]|[https://nanohub.org/resources/18621 slides pdf]\]\n
+  NEEDS e-Seminar, Nov 2013.
+
+- */\"Introduction to Compact Models and Circuit Simulation\"/*\n
+  \[[https://nanohub.org/resources/18616 video link]|[https://nanohub.org/resources/18619/download/2013.03.07-NEEDS-SPICE.pdf slides pdf]\]\n
+  NEEDS Workshop on Compact Modelling, Purdue University, West Lafayette, IN, Mar 2013.
+
+- */\"Guidelines for Writing NEEDS-compatible Verilog-A Compact Models\"/*\n
+  \[[https://nanohub.org/resources/18621 video link]|[https://nanohub.org/resources/18623/download/NEEDS-Compatible-Verilog-A-Guidelines-v5.1-2.pdf slides pdf]\]\n
+  NEEDS Workshop on Compact Modelling, Purdue University, West Lafayette, IN, Mar 2013.
+
